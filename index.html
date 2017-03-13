@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Search</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="controller.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+</head>
+<body ng-app="mainApp">
+<div>
+	<div id="searchBoxes">
+	<h1>Filtering of the Search</h1>
+
+	<hr class="styleHR">
+
+	<h2>Name and age in the local area</h2>
+		Global Search Filter: <input type="text" class="textbox" ng-model="globalSearch.$"><br><br>
+		Search Names Here: <input type="text" class="textbox" ng-model="globalSearch.Name"><br><br>
+		Search Age Here: <input type="text" class="textbox" ng-model="globalSearch.Age"><br><br>
+		Search State Here: <input type="text" class="textbox" ng-model="globalSearch.State"><br><br>
+	</div>
+
+	<div ng-controller="people">
+		<ul>
+			
+			<li ng-repeat="person in persons | filter:globalSearch">
+				{{ "Name: " + person.Name + "     ,       Age: " + person.Age + "      ,      State: " + person.State }} 
+			</li>
+		</ul>
+	</div>
+</div>
+	
+</body>
+</html>

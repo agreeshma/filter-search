@@ -1,0 +1,38 @@
+.textbox {
+	border:2px solid #456879;
+	border-radius:10px;
+	height: 22px;
+	width: 230px;
+	font-family: cursive;
+    color: olivedrab;
+    font-size: 14px
+}
+#searchBoxes{
+	    font-family: cursive;
+	    color: brown;
+}
+
+h2{
+	color: brown;
+	 font-family: cursive;
+}
+h1{
+	font-family: cursive;
+	    color: saddlebrown;
+}
+li{
+	    font-family: monospace;
+    color: teal;
+}
+
+hr.styleHR {
+    border: 0;
+    height: 0; 
+    box-shadow: 0 0 10px 1px red;
+}
+hr.styleHR:after {  
+    content: "\00a0"; 
+}
+body {
+    background-image: url("http://orig02.deviantart.net/fece/f/2011/311/c/1/christmas_snow_wallpaper_by_dweechullie-d4fe2k2.jpg");
+}
